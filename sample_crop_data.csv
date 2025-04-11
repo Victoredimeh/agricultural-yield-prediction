@@ -1,0 +1,11 @@
+Area,Item,Year,hg/ha_yield,average_rain_fall_mm_per_year,pesticides_tonnes,avg_temp,soil_quality_index,fertilizer_kg_ha
+United Kingdom,Potatoes,2010,421050,1220,36754,18.2,0.82,187.3
+Brazil,Maize,2005,30120,1460,28976,23.1,0.76,156.8
+India,Rice,2012,36543,1150,34521,25.4,0.68,142.5
+France,Wheat,2008,65784,875,25437,17.3,0.79,168.2
+Kenya,Maize,2009,17652,980,12654,22.5,0.59,98.3
+China,Rice,2011,63254,1310,42158,22.8,0.71,183.6
+United States,Soybeans,2007,28754,925,38762,19.5,0.77,145.2
+Nigeria,Cassava,2013,126541,1175,15876,26.7,0.63,103.7
+Germany,Potatoes,2009,398764,950,29843,16.8,0.81,175.4
+Australia,Wheat,2006,18965,590,21532,21.6,0.72,138.9
