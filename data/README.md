@@ -2,42 +2,47 @@
 
 This directory contains sample datasets for the agricultural yield prediction model.
 
-## Sample Data
+## Dataset Overview
 
-`sample_crop_data.csv` - A small anonymized dataset demonstrating the required format for the prediction model.
+The dataset used in this study consists of 28,242 records spanning multiple years (1990-2013) across 101 distinct geographical regions and 10 crop types, sourced from Kaggle. 
 
 ## Data Format
 
-The model expects CSV files with the following columns:
-- temperature_mean: Average temperature during growing season (°C)
-- rainfall_total: Total rainfall during growing season (mm)
-- soil_nitrogen: Nitrogen content in soil (ppm)
-- soil_phosphorus: Phosphorus content in soil (ppm)
-- soil_potassium: Potassium content in soil (ppm)
-- humidity_mean: Average humidity during growing season (%)
-- sunshine_hours: Total sunshine hours during growing season
-- irrigation_amount: Applied irrigation water (mm)
-- pest_severity: Pest infestation severity score (0-10)
-- yield: Target variable - crop yield in tons/hectare
+The sample dataset includes the following key variables:
 
-## Data Sources
+- `hg/ha_yield`: Crop yield in hectograms per hectare (target variable)
+- `average_rain_fall_mm_per_year`: Annual rainfall in millimeters
+- `pesticides_tonnes`: Pesticide usage in tonnes
+- `avg_temp`: Average temperature in degrees Celsius
+- `fertilizer_kg_ha`: Fertilizer application in kg per hectare
+- `soil_quality_index`: Index measuring soil quality
+- `Area`: Geographic location where crops are grown
+- `Item`: Type of crop (e.g., Potatoes, Maize, Rice)
+- `Year`: Year of data collection
 
-## Data Sources
+## Sample Data
 
-The dataset used for this research was sourced from Kaggle.com, a platform for data science competitions and datasets. The specific dataset contains agricultural data including environmental variables, soil properties, and resulting crop yields from various growing seasons.
-
-All personally identifiable information and specific location data have been anonymized to protect privacy while maintaining the statistical relationships between features.
-
-All personally identifiable information and specific location data have been anonymized to protect privacy while maintaining the statistical relationships between features.
+The `sample_crop_data.csv` file contains a small subset of the full dataset, providing examples of the data structure without revealing the entire dataset. This sample is suitable for testing the prediction models and understanding the data format.
 
 ## Using Your Own Data
 
 To use your own data with this model:
-1. Format your CSV file following the column structure above
+1. Format your CSV file to match the structure of the sample data
 2. Ensure all required features are present
 3. Place your file in this directory
 4. Reference your filename in the model scripts
 
-## Full Dataset
+## Data Sourcing and Preprocessing
 
-Due to size limitations, the full dataset used in the thesis research is not included in this repository. For research purposes, please contact the author for access to the complete dataset.
+The original dataset was obtained from Kaggle. Prior to analysis, the following preprocessing steps were applied:
+
+- Missing values were handled using median imputation for numerical variables (5.3% of the data contained missing values)
+- Categorical variables were encoded using one-hot encoding
+- Features were standardized to have zero mean and unit variance
+- Outliers were identified using the IQR method and verified against agricultural literature
+
+## Citation
+
+When using this dataset, please cite the original source:
+
+Edimeh, V. U. (2025). "Advancing agricultural yield prediction with explainable AI: An integrated approach using hybrid feature selection and comparative model analysis" (Master's thesis). Cyprus International University, Nicosia, Cyprus.
