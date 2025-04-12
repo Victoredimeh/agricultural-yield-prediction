@@ -57,7 +57,7 @@ Based on the thesis results, XGBoost outperformed other models, with ANN and Ran
 | Linear Regression | 4557.6 | 0.62 | 2083.1 |
 
 ## Implementation Details
- -The hybrid feature selection method improved model performance by 10.0% for XGBoost and 9.3% for ANN
--SHAP analysis identified rainfall (SHAP value: 2.37), temperature (1.82), and pesticide application (1.43) as the most influential factors
-- Models performed worse in areas with high climate variability, with accuracy declining by 16.4% in regions with high rainfall variability
 
+* The hybrid feature selection method improved model performance by 10.0% for XGBoost and 9.3% for ANN
+* SHAP analysis identified rainfall (SHAP value: 2.37), temperature (1.82), and pesticide application (1.43) as the most influential factors
+* Models performed worse in areas with high climate variability, with accuracy declining by 16.4% in regions with high rainfall variability
